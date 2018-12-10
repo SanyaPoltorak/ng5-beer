@@ -1,8 +1,9 @@
-routes.$inject = ['$locationProvider', '$stateProvider'];
+routes.$inject = ['$locationProvider'];
 
-export default function routes($locationProvider, $stateProvider) {
+export default function routes($locationProvider) {
   $locationProvider.hashPrefix('');
 
+/*
     $stateProvider
       .state('home', {
         url: '/',
@@ -16,4 +17,5 @@ export default function routes($locationProvider, $stateProvider) {
             url: '/beer/:id',
             template: ''
         });
+*/
 }

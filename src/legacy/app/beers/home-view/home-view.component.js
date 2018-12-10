@@ -3,7 +3,6 @@ class HomeViewCtrl {
         BeerService.getBeers().then(response => {
                 this.beers = response.data
             });
-        console.log('Home view controller', this);
     }
 }
 

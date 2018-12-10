@@ -1,16 +1,9 @@
 class BeerDetailsCtrl {
-    constructor($state, BeerService) {
-/*
-      setTimeout(()=>{
-        BeerService.getBeerById($state.params.id).then(
-          beer => this.beer = beer
-        );
-      }, 0);
-*/
+    constructor(BeerService) {
     }
 }
 
-BeerDetailsCtrl.$inject = ['$state', 'BeerService'];
+BeerDetailsCtrl.$inject = ['BeerService'];
 
 module.exports = {
     template: require('./beer-details.html'),

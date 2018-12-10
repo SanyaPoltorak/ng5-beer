@@ -40,7 +40,6 @@ import { BeerServiceProvider } from './services/beer-service/beer.service';
 
 export class AppModule {
   constructor(upgrade: UpgradeModule) {
-    console.log('AppModule!');
     angular.module(beerAppModule.name)
       .directive('beerDescription', downgradeComponent({ component: BeerDescriptionComponent }));
     upgrade.bootstrap(document.documentElement, [beerAppModule.name]);

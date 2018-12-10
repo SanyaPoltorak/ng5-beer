@@ -14,7 +14,6 @@ export class BeerDetailsComponent implements OnInit {
     private route: ActivatedRoute,
     @Inject('BeerService') private beerService
   ) {
-    console.log('Init');
   }
 
   ngOnInit() {
