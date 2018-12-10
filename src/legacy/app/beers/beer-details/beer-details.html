@@ -1,0 +1,38 @@
+<article id="content-wrapper" class="content-wrapper detail-wrapper" ng-cloak>
+    <section id="detail-content-dinosaur" class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="text-center" ng-bind="::$ctrl.beer.name"></h2>
+        </div>
+        <div class="panel-logo">
+          <img src="assets/{{::$ctrl.beer.logo}}"/>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h4 class="list-group-item-heading">Brewery:</h4>
+                <p class="list-group-item-text">
+                    <em>{{::$ctrl.beer.brewery}}</em>
+                </p>
+            </li>
+            <li class="list-group-item">
+                <h4 class="list-group-item-heading">Type:</h4>
+                <p class="list-group-item-text">{{::$ctrl.beer.type}}</p>
+            </li>
+            <li class="list-group-item">
+                <h4 class="list-group-item-heading">ABV:</h4>
+                <p class="list-group-item-text">{{::$ctrl.beer.abv}}%</p>
+            </li>
+            <li class="list-group-item">
+                <h4 class="list-group-item-heading">Country:</h4>
+                <p class="list-group-item-text">{{::$ctrl.beer.country}}</p>
+            </li>
+        </ul>
+
+        <div class="panel-body">
+            <beer-description [description]="$ctrl.beer.description"></beer-description>
+        </div>
+
+        <div class="panel-footer">
+            <a ng-href="/">&larr; Back</a>
+        </div>
+    </section>
+</article>

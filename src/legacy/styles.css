@@ -1,0 +1,214 @@
+/*--------------------
+   LAYOUT VARIABLES
+--------------------*/
+/*-- Padding --*/
+/*--------------------
+      RESPONSIVE
+--------------------*/
+/*-- Variables --*/
+/*-- Mixins --*/
+/*--------------------
+       BASICS
+--------------------*/
+/*-- Cursor --*/
+a,
+input[type=button],
+input[type=submit],
+button {
+  cursor: pointer; }
+
+/*-- ng-cloak: prevent FOUC before Angular JavaScript loads --*/
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important; }
+
+/*-- Forms --*/
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select option,
+textarea {
+  font-size: 16px;
+  /* for iOS to prevent autozoom */ }
+
+/*--------------------
+    PRESENTATION
+--------------------*/
+body {
+  background: #eee;
+  color: #333;
+  font: normal 16px/1.2 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif; }
+
+.layout-canvas {
+  background: #fff; }
+
+/*---------------------------- Content --*/
+.content-wrapper {
+  padding: 3%; }
+  @media screen and (min-width: 768px) {
+    .content-wrapper {
+      margin: 0 auto;
+      max-width: 960px;
+      padding: 1.5% 3%; } }
+
+.content-heading {
+  text-align: center; }
+
+/*--------------------
+ LAYOUT FUNCTIONALITY
+--------------------*/
+body {
+  min-width: 320px; }
+
+.layout-overflow {
+  overflow: hidden;
+  /* necessary to handle offcanvas scrollbar behavior */ }
+
+/*---------------------------- Off-canvas Functionality --*/
+/*-- Content canvas wrapper --*/
+.layout-canvas {
+  backface-visibility: hidden;
+  position: relative;
+  left: 0;
+  width: 100%; }
+  .csstransforms3d .layout-canvas {
+    transition: transform 250ms ease;
+    transform: translate3d(0, 0, 0); }
+  .csstransforms3d .layout-canvas.nav-open {
+    transform: translate3d(270px, 0, 0); }
+  .no-csstransforms3d .layout-canvas.nav-open {
+    left: 270px; }
+
+/*-- Navigation --*/
+.header .nav {
+  backface-visibility: hidden;
+  display: none;
+  /* deal with FOUC */
+  height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  width: 270px; }
+  .nav-closed .header .nav,
+  .nav-open .header .nav {
+    display: block;
+    /* deal with FOUC */ }
+  .csstransforms3d .header .nav {
+    transform: translate3d(-100%, 0, 0); }
+  .no-csstransforms3d .nav-closed .header .nav {
+    left: -100%; }
+  .no-csstransforms3d .nav-open .header .nav {
+    left: -270px; }
+
+/*-- Components --*/
+/*--------------------
+        HEADER
+--------------------*/
+/*--------------------
+     NAVIGATION
+--------------------*/
+/*---------------------------- Hamburger toggle --*/
+.toggle-offcanvas {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  height: 50px;
+  padding: 23.5px 13px;
+  position: relative;
+  text-align: center;
+  width: 50px;
+  z-index: 100; }
+  .toggle-offcanvas span,
+  .toggle-offcanvas span:before,
+  .toggle-offcanvas span:after {
+    background: #fff;
+    border-radius: 1px;
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+    transition: all 250ms ease-in-out;
+    width: 24px; }
+  .toggle-offcanvas span:before {
+    top: -9px; }
+  .toggle-offcanvas span:after {
+    bottom: -9px; }
+  .nav-open .toggle-offcanvas span {
+    background: transparent; }
+    .nav-open .toggle-offcanvas span:before, .nav-open .toggle-offcanvas span:after {
+      top: 0; }
+    .nav-open .toggle-offcanvas span:before {
+      transform: rotate(45deg); }
+    .nav-open .toggle-offcanvas span:after {
+      transform: rotate(-45deg); }
+
+/*---------------------------- Navigation --*/
+.header .nav {
+  box-shadow: inset -8px 0 8px -6px rgba(0, 0, 0, 0.2);
+  padding: 3%; }
+  .header .nav .active {
+    font-weight: bold; }
+  .header .nav-list {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0; }
+    .header .nav-list a {
+      display: block;
+      padding: 6px; }
+      .header .nav-list a:hover, .header .nav-list a:active, .header .nav-list a:focus {
+        text-decoration: none; }
+
+.header-page {
+  color: #fff;
+  height: 50px;
+  margin-bottom: 10px;
+  position: relative; }
+  .header-page-siteTitle {
+    font-size: 30px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0 0 0 50px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%; }
+    .header-page-siteTitle a {
+      color: #fff;
+      text-decoration: none; }
+
+/*--------------------
+        FOOTER
+--------------------*/
+.footer {
+  padding: 3%;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      padding: 1.5% 3%; } }
+
+/*--------------------
+       LOADING
+--------------------*/
+.loading {
+  display: block;
+  margin: 30px auto; }
+
+/*-- Pages --*/
+/*--------------------
+         HOME
+--------------------*/
+.home-search {
+  margin-bottom: 20px; }
+
+/*--------------------
+       DETAIL
+--------------------*/
+.detail-wrapper .panel-heading h2 {
+  margin-top: 10px; }
+
+.detail-wrapper .panel-body .lead {
+  font-size: 16px; }

@@ -1,0 +1,93 @@
+[
+  {
+    "id": "001",
+    "name": "TRIPEL KARMELIET",
+    "type": "blonde",
+    "abv": "8.4",
+    "brewery": "Bosteels",
+    "country": "Belgian beer",
+    "logo": "tripel_karm.jpg",
+    "description": "Often called the best Tripel in the world, Tripel Karmaliet has one endless awards. It’s brewed using barley, wheat and oats which give it a smooth mouthfeel and more complex malt body. On top of that the brewery layers banana-like esters from the yeast and a little hop spiciness that adds a quinine-like dryness to the finish. A stunning example of the style."
+  },
+  {
+    "id": "002",
+    "name": "CHIMAY WHITE",
+    "type": "tripel",
+    "abv": "8",
+    "brewery": "Chimay",
+    "country": "Belgian beer",
+    "logo": "chimay_white.png",
+    "description": "Chimay Triple, differentiated only by \"Cinq Cents\" on the 750 ml bottle, from the 33cl Triple. A golden colour, this Trappist beer combines sweet and bitter in a rare balance. The beer's aroma felt in the mouth comes from the hops' perfumes: above all, they are fruity touches of Muscat grapes and raisins, even ripe apples. This traditional Belgian beer is best savoured fresh at a temperature 6 to 8¬∞C."
+  },
+  {
+    "id": "003",
+    "name": "PAULANER MUNICH",
+    "type": "lager",
+    "abv": "5",
+    "brewery": "Paulaner",
+    "country": "German beer",
+    "logo": "paulaner_munich.png",
+    "description": "No one makes lagers like the Germans, and Munich’s historic Paulaner Brewery makes some of the best. This crisp helles starts malty sweet but dries out as the hoppy, biscuit finish takes over. It’s made will all Bavarian ingredients, including hallertau, a nobel German hop used in lagers all over the world."
+  },
+  {
+    "id": "004",
+    "name": "AUGUSTINER HELLES",
+    "type": "lager",
+    "abv": "5.2",
+    "brewery": "Augustiner",
+    "country": "German beer",
+    "logo": "augustiner_helles.png",
+    "description": "Quite simply one of the best lagers in the world. Made according to the German Purity law its made with all Bavarian hops and malt, then given a long secondary fermentation to make for a crisp, smooth beer with a lightly hoppy finish. It's the ultimate summer beer and absurdly drinkable."
+  },
+  {
+    "id": "005",
+    "name": "SIERRA NEVADA PALE ALE",
+    "type": "PALE ALE & IPA",
+    "abv": "5.6",
+    "brewery": "Sierra Nevada",
+    "country": "American beer",
+    "logo": "sierra_nevada_pale_ale.png",
+    "description": "Sierra Nevada Pale ale is an enticing American Pale ale, now the definition of a classic style \"The American Pale Ale\". It has a deep amber colour and an exceptionally full-bodied, complex character. Generous quantities of premium Cascade hops give the Pale Ale its fragrant bouquet and spicy flavour. Sierra Nevada Pale Ale is the flagship beer, the one that made Chico famous."
+  },
+  {
+    "id": "006",
+    "name": "WILD BEER REDWOOD",
+    "type": "SOUR & LAMBIC",
+    "abv": "5.8",
+    "brewery": "Wild Beer Co",
+    "country": "British beer",
+    "logo": "wild_beer_co_redwood.png",
+    "description": "Redwood will vary year on year based on the forgeable fruits available (heavy on damsons and plums this year) and the barrels selected for the final beer by Wild Beer Co's blending team. The mixture of berries and barrels culminates in a crescendo of sweet fruits, roasted oak and vibrant acidity."
+  },
+  {
+    "id": "007",
+    "name": "WHITE HAG MEABH RUA IRISH BOG ALE",
+    "type": "RED ALE",
+    "abv": "8.2",
+    "brewery": "White Hag",
+    "country": "Irish beer",
+    "logo": "white_hag_irish_bog_ale.png",
+    "description": "Despite having one of the most bizarre names for a beer, this is an absolute delight! This beefed up Irish red ale was made as a call-back to ancient Irish brewing traditions. The use of peat smoked malt is modern, but the flavours are pure Irish history. A rich, sweet malt base and delicate hop bite make this as truly unique and superb beer."
+  },
+  {
+    "id": "008",
+    "name": "VIVEN IMPERIAL IPA",
+    "type": "PALE ALE & IPA",
+    "abv": "8",
+    "brewery": "Viven",
+    "country": "Belgian beer",
+    "logo": "viven_ipa.png",
+    "description": "A superbly balanced West Coast US style IPA brewed in Belgium. You get big fruit aromoas and hints of spices that are bulit on the foundation of a lightly caramel and biscuit malt base. A lasting, dry finish crowns this beer perfectly."
+  },
+  {
+    "id": "009",
+    "name": "SCHNEIDER WEISSE MEINE HOPFENWEISSE TAP5",
+    "type": "WHITE, WIT & WHEAT",
+    "abv": "8.2",
+    "brewery": "Schneider & Sohn",
+    "country": "German beer",
+    "logo": "hopfen.jpg",
+    "description": "Schneider Weisse Meine Hopfenweisse is a shiny golden, slightly reddish strong wheat doppelbock. It has an intense floral aroma that reminds of tropical fruit and pineapple and a powerful bitterness is relieved by fruity sweetness."
+  }
+
+]

@@ -1,0 +1,5 @@
+<section ng-if="$ctrl.beers" class="row">
+    <div class="col-xs-12 col-sm-4" ng-repeat="beer in $ctrl.beers">
+        <beer-card item="beer"></beer-card>
+    </div>
+</section>
