@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pok5": {
+    "ng5-beer": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pok5",
+            "outputPath": "dist/ng5-beer",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pok5:build"
+            "browserTarget": "ng5-beer:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "pok5:build:production"
+              "browserTarget": "ng5-beer:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pok5:build"
+            "browserTarget": "ng5-beer:build"
           }
         },
         "test": {
@@ -96,7 +96,7 @@
         }
       }
     },
-    "pok5-e2e": {
+    "ng5-beer-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -104,7 +104,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "pok5:serve"
+            "devServerTarget": "ng5-beer:serve"
           },
           "configurations": {
             "production": {
@@ -124,5 +124,5 @@
       }
     }
   },
-  "defaultProject": "pok5"
+  "defaultProject": "ng5-beer"
 }
